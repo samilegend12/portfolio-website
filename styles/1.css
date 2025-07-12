@@ -1,31 +1,43 @@
-.open-sans-normal > {
+.open-sans-normal {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: normal;
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
-
+/* nav styles */
 nav {
   display: flex;
   justify-content: space-between;
   margin: 10px 200px;
   align-items: center;
 }
-.text-color {
-  color: #fd6e0a;
-}
+
 .nav-title {
   font-weight: bolder;
   font-size: 45px;
 }
-/* 1111111111111 */
+
 nav ul li {
   list-style: none;
   margin: 50px;
 }
 nav li a {
   text-decoration: none;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+/* Shared styles */
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: #fd6e0a;
+}
+.secondary-bg {
+  background-color: oklab(93.551% 0.00196 0.00469);
 }
 .dark-2 {
   color: #474747;
@@ -36,10 +48,6 @@ nav li a {
 .dark-3 {
   color: #757575;
 }
-nav ul {
-  display: flex;
-  align-items: center;
-}
 .btn {
   background-color: #fd6e0a;
   font-size: 20px;
@@ -48,6 +56,12 @@ nav ul {
   padding: 18px 35px;
   border-radius: 5px;
   border: none;
+
+  .section-title {
+    color: #181818;
+    font-size: 35px;
+    font-weight: bold;
+  }
 }
 .banner-greetings {
   font-weight: 600;
@@ -77,4 +91,53 @@ nav ul {
   background-image: url("../images/developer.png"), url(../images/header_bg.png);
   background-repeat: no-repeat;
   background-position: top left, bottom right;
+}
+.section-description .dark-1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+/* about styles */
+.about {
+  border-radius: 10px;
+  padding: 130px 150px;
+  text-align: center;
+  margin-top: 67px;
+}
+.about1 {
+  margin-top: 20px;
+  padding: 100px 240px;
+  text-align: center;
+}
+
+/* Main styles */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.iteam-documents {
+  font-weight: bold;
+  font-size: 20px;
+}
+.about-iteams {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* what i do */
+
+.skills-con {
+  display: flex;
+  gap: 24px;
+}
+.skill {
+  padding: 30px;
+  box-shadow: 0px 6px 50px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  margin-top: 90px;
+  padding: 2;
+}
+/* resume-styles */
+.resume-cont {
+  display: flex;
+  gap: 24px;
 }
